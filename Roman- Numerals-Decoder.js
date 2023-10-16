@@ -1,17 +1,20 @@
-function solution(roman) {
-  const roman = {
-    M: 1000,
-    CM: 900,
-    D: 500,
-    CD: 400,
-    C: 100,
-    XC: 90,
-    L: 50,
-    XL: 40,
-    X: 10,
-    IX: 9,
-    V: 5,
-    IV: 4,
+function convertRoman(roman) {
+  const romansNumerals = {
     I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
   };
+  let romanDigits = roman.split("");
+  return romanDigits.reduce((acc, curr, index) => {
+    if (romansNumerals[curr] < romansNumerals[romanDigits[index + 1]]) {
+      return acc - romansNumerals[curr];
+    }
+    return acc + romansNumerals[curr];
+  }, 0);
 }
+
+console.log(convertRoman("MMVIII"));
