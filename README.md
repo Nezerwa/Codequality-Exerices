@@ -1,1 +1,1 @@
-## Code quality exercises
+## code quality exercise
