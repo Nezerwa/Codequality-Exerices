@@ -1,11 +1,9 @@
 const createPhoneNumber = (numbers) => {
-  const convertToString = numbers.join("");
-
-  // Add brackets and - in our phone number
-  const newPhoneNumber = `(${convertToString.slice(
-    0,
-    3
-  )}) ${convertToString.slice(3, 6)}-${convertToString.slice(6, 10)}`;
-  return newPhoneNumber;
+  let phoneNumber = "(xxx) xxx-xxxx";
+  numbers.forEach((number) => {
+    phoneNumber = phoneNumber.replace("x", number);
+  });
+  return phoneNumber;
 };
 
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
