@@ -17,4 +17,3 @@ const numbersToRoman = (roman) => {
   }, 0);
 };
 
-console.log(numbersToRoman("MMVIII"));
