@@ -1,4 +1,4 @@
-function convertRoman(roman) {
+const numbersToRoman = (roman) => {
   const romansNumerals = {
     I: 1,
     V: 5,
@@ -15,6 +15,6 @@ function convertRoman(roman) {
     }
     return acc + romansNumerals[curr];
   }, 0);
-}
+};
 
-console.log(convertRoman("MMVIII"));
+console.log(numbersToRoman("MMVIII"));
