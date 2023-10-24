@@ -1,9 +1,9 @@
 function discount(totalamount) {
-  let disc;
+  let discount;
   if (totalamount > 100) {
-    disc = totalamount * 0.1;
+    discount = totalamount * 0.1;
   } else {
-    disc = totalamount * 0.05;
+    discount = totalamount * 0.05;
   }
-  return disc;
+  return discount;
 }
