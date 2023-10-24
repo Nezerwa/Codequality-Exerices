@@ -6,4 +6,3 @@ function calculateAverage(numbers) {
   return sum / numbers.length;
 }
 
-console.log(calculateAverage([1, 2, 3, 5]));
