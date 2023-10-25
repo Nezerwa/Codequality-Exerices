@@ -1,6 +1,4 @@
-const sum = (arr) => {
-  if (arr.length < 1) return 0;
-  return arr.pop() + sum(arr);
+const sum = (array) => {
+  if (array.length < 1) return 0;
+  return array.pop() + sum(array)
 };
-
-console.log(sum([1, 2, 3]));
