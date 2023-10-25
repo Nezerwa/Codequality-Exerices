@@ -7,4 +7,4 @@ function isPrimeNumber(number) {
   }
 }
 
-console.log(isPrimeNumber(11));
+console.log(isPrimeNumber(2));
